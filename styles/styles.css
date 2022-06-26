@@ -1,5 +1,6 @@
 :root {
     --primary-text-color: #5e5e5e;
+    --transition-hover: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 *{
     box-sizing: border-box;
@@ -27,6 +28,7 @@ font-family: Roboto;
 font-weight: 400;
 color: var(--primary-text-color);
 }
+header
 .header__top{
     background-color: #303030;
 
@@ -36,19 +38,59 @@ color: var(--primary-text-color);
     line-height: 36px;
     font-family: Roboto;
     font-weight: 700;
+    font-size: 16px;
     color:#1b1b1b;
     background-color: #ffc222;
     padding: 5px 20px;
 
 }
-.header__btn:after{
+.header__contacts:after{
     content: "";
     clear:both;
     display: block;
 }
+.header__phone,
+.header__email{
+    color:#cbcacb;
+    letter-spacing: 0.25px;
+    line-height: 45px;
+    
+}
 .header__phone{
-
+    padding-left: 20px;
+    padding-right: 30px;
 }
 .header__email{
+    padding-left: 24px;
+}
+.header__content{
+    padding: 34px 0px 23px;
+}
+
+.header__content-inner{
+    display: flex;
+    justify-content:space-between ;
+
+}
+.menu li {
+    display: inline-block;
     
+}
+.menu li + li{
+    padding-left: 10px;
+}
+
+.menu a{
+    color: #323232;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding: 0px 16px;
+
+}
+.menu a:hover,
+.menu a:focus
+{
+    border-color: #ffc222;
+    transition: var(--transition-hover)
 }
