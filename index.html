@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./styles/slick.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
@@ -17,9 +19,31 @@
       <div class="header__top">
         <div class="header__contacts">
           <div class="container">
-            <a class="header__phone" href="tel:0639342904">+38 063 934 29 04</a>
-            <a class="header__email" href="#">climatmakers.@gmail.com</a>
-            <a class="header__btn" href="#">Бесплатная консультация</a>
+            <a class="header__phone" href="tel:0639342904"
+              ><svg class="header-icon" width="18" height="18">
+                <use href="./styles/img/icons/sprite.svg#icon-phone"></use></svg
+              >+38 063 934 29 04</a
+            >
+            <a class="header__email" href="#"
+              ><svg class="header-icon" width="18" height="18">
+                <use
+                  href="./styles/img/icons/sprite.svg#icon-envelope-o"
+                ></use></svg
+              >climatmakers.@gmail.com</a
+            >
+
+            <a
+              data-fancybox
+              data-src="#modal"
+              href="javascript:;"
+              class="header__btn"
+              href="#"
+              ><svg class="header-btn__icon" width="18" height="18">
+                <use
+                  href="./styles/img/icons/sprite.svg#icon-briefcase"
+                ></use></svg
+              >Бесплатная консультация</a
+            >
           </div>
         </div>
       </div>
@@ -47,5 +71,189 @@
         </div>
       </div>
     </header>
+    <section class="slider">
+      <div class="container">
+        <div class="slider__inner">
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">ПОДБОР И УСТАНОВКА КЛИМАТТЕХНИКИ</div>
+              <div class="slider__text">
+                Продажа, доставка и установка кондиционеров с дальнейшим
+                обслуживанием и поддержкой.
+              </div>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="slider__button"
+              >
+                <svg class="hero__icon-btn" width="18" height="18">
+                  <use
+                    href="./styles/img/icons/sprite.svg#icon-angle-right"
+                  ></use>
+                </svg>
+                Оставить заявку
+              </a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">ПОДБОР И УСТАНОВКА КЛИМАТТЕХНИКИ</div>
+              <div class="slider__text">
+                Продажа, доставка и установка кондиционеров с дальнейшим
+                обслуживанием и поддержкой.
+              </div>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="slider__button"
+              >
+                <svg class="hero__icon-btn" width="18" height="18">
+                  <use
+                    href="./styles/img/icons/sprite.svg#icon-angle-right"
+                  ></use>
+                </svg>
+                Оставить заявку
+              </a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="slider__item-content">
+              <div class="slider__title">ПОДБОР И УСТАНОВКА КЛИМАТТЕХНИКИ</div>
+              <div class="slider__text">
+                Продажа, доставка и установка кондиционеров с дальнейшим
+                обслуживанием и поддержкой.
+              </div>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="slider__button"
+                class="slider__button"
+              >
+                <svg class="hero__icon-btn" width="18" height="18">
+                  <use
+                    href="./styles/img/icons/sprite.svg#icon-angle-right"
+                  ></use>
+                </svg>
+                Оставить заявку
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__top">
+          <div class="about__title-box">
+            <div class="about-title">Наши услуги</div>
+            <div class="about-text">
+              Комплексный подход к установке кондиционера, доставка и монтаж в
+              один день. Мы сделаем монтаж под ключ, а также подключение запуск
+              и консультация по пользованию входит в услугу.
+            </div>
+          </div>
+          <div class="about__btn">
+            <a href="#"> Показать все услуги </a>
+          </div>
+        </div>
+        <div class="about__items">
+          <div class="about__item">
+            <img class="about__img" src="./styles/img/about-1.png" alt="" />
+            <div class="about__item-title">Ликвидация предприятия</div>
+            <div class="about__item-text">
+              варррироко куеи умеруриу уме муеруи варррироко куеи умеруриу уме
+              муеруи умируи варррироко куеи умеруриу уме муеруи умируи емигог рр
+              иникотигтк умируи емигог рр иникотигтк
+            </div>
+            <div class="about__item-btn">
+              <a class="about__item-link" href="#">Подробнее</a>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="slider__button about__button"
+              >
+                <svg class="hero__icon-btn" width="18" height="18">
+                  <use
+                    href="./styles/img/icons/sprite.svg#icon-angle-right"
+                  ></use>
+                </svg>
+                Заказать
+              </a>
+            </div>
+          </div>
+
+          <div class="about__item">
+            <img
+              class="about__img"
+              class=""
+              src="./styles/img/about-2.png"
+              alt=""
+            />
+            <div class="about__item-title">Адвокатское сопровождение</div>
+            <div class="about__item-text">
+              варррироко куеи умеруриу уме муеруи умируи емигог рр иникотигтк
+              котигтк варррироко куеи умеруриу уме муеруи умируи емигог рр
+              иникотигтк варррироко куеи умеруриу уме муеруи умируи емигог рр
+              иникотигтк
+            </div>
+            <div class="about__item-btn">
+              <a class="about__item-link" href="#">Подробнее</a>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="slider__button about__button"
+              >
+                <svg class="hero__icon-btn" width="18" height="18">
+                  <use
+                    href="./styles/img/icons/sprite.svg#icon-angle-right"
+                  ></use>
+                </svg>
+                Заказать
+              </a>
+            </div>
+          </div>
+          <div class="about__item">
+            <img class="about__img" src="./styles/img/about-1.png" alt="" />
+            <div class="about__item-title">Создание предприятия</div>
+            <div class="about__item-text">
+              куеи умеруриу уме муеруи умируи емигог рр иникотигтк умеруриу уме
+              муеруи умируи емигог рр иникотигтк
+            </div>
+            <div class="about__item-btn">
+              <a class="about__item-link" href="#">Подробнее</a>
+              <a
+                data-fancybox
+                data-src="#modal"
+                href="javascript:;"
+                class="slider__button about__button"
+              >
+                <svg class="hero__icon-btn" width="18" height="18">
+                  <use
+                    href="./styles/img/icons/sprite.svg#icon-angle-right"
+                  ></use>
+                </svg>
+                Заказать
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal">
+      <h2>Hello</h2>
+      <p>you are awesome!</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
