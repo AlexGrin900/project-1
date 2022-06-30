@@ -1,6 +1,6 @@
 :root {
     --primary-text-color: #5e5e5e;
-    --transition-hover: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-hover: 0.025s cubic-bezier(0.4, 0, 0.2, 1);
 }
 *{
     box-sizing: border-box;
@@ -41,8 +41,24 @@ header
     font-size: 16px;
     color:#1b1b1b;
     background-color: #ffc222;
-    padding: 5px 20px;
+    padding: 5px 20px 4px 50px;
+    position: relative;
 
+}
+.header-btn__icon{
+    position: absolute;
+    fill: #1b1b1b;
+    left:22px;
+    bottom:13px;
+}
+.header__btn:hover,
+.header__btn:focus{
+    color:#fff;
+    transition: var(--transition-hover);}
+.header__btn:hover .header-btn__icon,
+.header__btn:focus .header-btn__icon{
+    fill:#fff;
+    transition: var(--transition-hover);
 }
 .header__contacts:after{
     content: "";
@@ -54,14 +70,29 @@ header
     color:#cbcacb;
     letter-spacing: 0.25px;
     line-height: 45px;
+    position: relative;
+    
     
 }
-.header__phone{
-    padding-left: 20px;
-    padding-right: 30px;
+.header__phone:hover,
+.header__email:hover,
+.header__phone:focus,
+.header__email:focus{
+    color: #ffc222;
+    
+        transition: var(--transition-hover)
+
 }
+.header__phone{
+    padding-left: 30px;
+    padding-right: 30px;
+   
+   
+}
+
 .header__email{
-    padding-left: 24px;
+    padding-left: 28px;
+    
 }
 .header__content{
     padding: 34px 0px 23px;
@@ -72,6 +103,24 @@ header
     justify-content:space-between ;
 
 }
+.header-icon{
+fill: #cbcacb;
+position: absolute;
+left: 2px;
+top: 50%;
+    transform: translateY(-50%);
+
+
+}
+.header__phone:hover .header-icon,
+.header__phone:focus .header-icon,
+.header__email:hover .header-icon,
+.header__email:focus .header-icon{
+    fill: #ffc222;
+        transition: var(--transition-hover)
+}
+
+
 .menu li {
     display: inline-block;
     
@@ -92,5 +141,199 @@ header
 .menu a:focus
 {
     border-color: #ffc222;
-    transition: var(--transition-hover)
+    transition: var(--transition-hover);
+    outline:none;
+}
+ #modal{ 
+    display: none;} 
+
+.slider{
+    background-color: #c4c4c4;
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../styles/img/slider-images.jpg)
+    ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     min-height: 500px;
+   
+    }
+    .slider__item-content{
+        text-align: center;
+        padding-top: 110px;
+        max-width: 665px;
+        margin: 0 auto;
+    }
+    .slider__title{
+        text-transform:uppercase ;
+        font-size: 30px;
+        line-height: 36px;
+        color: #fff;
+       font-weight: 500;
+       letter-spacing: 0.5px;
+       margin-bottom: 22px;
+    }
+    .slider__text{
+        line-height: 24px;
+        font-size: 18px;
+        color:#d3d2d2;
+        margin-bottom: 50px;
+
+    }
+    .slider__button{
+       display: inline-block;
+        font-size: 14px;
+        line-height: 24px;
+        color: #fff;
+        font-weight: 500; 
+        padding: 8px 30px 8px 24px;
+        border: 1px solid #ffc222;
+        border-right-width: 20px;
+        position:relative;
+        z-index: 2;
+        outline: none;
+
+    }
+    .hero__icon-btn{
+        position: absolute;
+            fill: #fff;
+            right: -19px;
+            top: 50%;
+            transform: translateY(-50%);
+    }
+        .slider__button:hover,
+        .slider__button:focus{
+            color: #ffc222;
+        transition: var(--transition-hover);}
+
+
+        .slider__button:hover .hero__icon-btn{
+            fill:black;
+            transition: var(--transition-hover);
+        }
+
+
+
+.slider__inner {
+    position: relative;
+}
+.slick-btn {
+   position: absolute;
+   top:70%;
+   z-index: 3;
+   width: 40px;
+height: 40px;
+border: 1px solid#fff;
+background-color: transparent;
+cursor: pointer;
+outline: none;
+
+}
+.slick-btn:hover,
+.slick-btn:focus {
+    background-color: #ffc222;
+transition: var(--transition-hover);
+
+}
+.slick-btn.slick-disabled{
+    cursor: default;
+    background-color: transparent;
+    border: 1px solid#c4c4c4;
+
+}
+
+
+
+
+.slick-prev {
+    left: 0;
+}
+.slick-next{
+    right: 0; 
+}
+
+.icon__slick-btn{
+    fill:#fff;
+}
+.about__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.about{
+    padding: 50px 0 30px;
+}
+
+.about__title-box{
+    max-width: 520px;
+    padding-left: 140px;
+    position: relative;
+}
+/* poloska vozle nashy yslugi */
+.about__title-box:before{
+    content:"";
+    position:absolute;
+    width:100px;
+    height: 2px;
+    background-color: #ffc222;
+    left: 0;
+    top: 11px;
+}
+/* poloska vozle nashy yslugi */
+.about-title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #212020;
+}
+.about-text{
+    letter-spacing:0,1px;
+
+}
+/* Кнопка все услуги */
+.about__btn a{
+    color:#373636;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+   padding: 5px 38px;
+   border: 3px solid #e6e6e6
+
+}
+/* Кнопка все услуги */
+.about__items{
+    display: flex;
+    justify-content: space-between;
+}
+.about__item{
+    max-width: 360px;
+    text-align: center;
+    padding: 30px 0px 80px;
+    position: relative;
+    min-height: 375px;
+    background-color: #ccc;
+}
+.about__img{
+    width: 300px;
+    height: 280px;
+}
+.about__item-title{
+    color: #212020;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 24px 0px;
+
+
+}
+.about__item-text{
+    letter-spacing: 0.1px;
+    padding: 0 35px 30px;
+   
+   
+
+}
+.about__item-btn{
+    position: absolute;
+    bottom: 40px;
+
 }
